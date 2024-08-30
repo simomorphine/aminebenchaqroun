@@ -80,7 +80,16 @@
         overflow: hidden;
         border: none;
     }
-    
+    /*table style*/
+    .table-dark-custom {
+            background-color: black;
+            color: white;
+        }
+    .table-dark-custom th, .table-dark-custom td {
+        background-color: black;
+        color: white;
+        border-color: #444;
+    }
 </style>
 </head>
 
@@ -226,9 +235,9 @@
 <!--horaire et geolocation-->
 <div class="row">
   <!--horaire-->
-  <div class="col-md-6 bg-black text-white p-3">
+  <div class="col-md-6 p-2 mb-2">
     <h2>Horaire</h2>
-    <table class="table table-bordered h-100 text-white">
+    <table class="table table-bordered h-100 table-dark-custom">
       <thead>
         <tr>
           <th>Jour</th>
@@ -265,10 +274,9 @@
   </div>
   
     <!--geolocation-->
-    <div class="col-12 col-md-6">
-      <h2>Location</h2>
-      <div id="map" style="height: 500px; width: 100%;"></div>
-    </div>
+  <div class="col-12 col-md-6">
+    <h2>Location</h2>
+    <div id="map" style="height: 500px; width: 100%;"></div>
   </div>
 </div>
   <!-- Page Overlay For Nav -->
