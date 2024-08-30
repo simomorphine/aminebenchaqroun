@@ -28,9 +28,6 @@
   <meta property="profile:last_name" content="Bencheqroun">
   <meta property="profile:gender" content="male">
   <meta property="profile:username" content="aminebencheqroun">
-  
-  <!-- Pinterest Verification -->
-  <meta name="p:domain_verify" content="new-verification-code" />
 
   <!-- Typekit Script -->
   <script src="../js/dww5wqt.js"></script>
@@ -42,22 +39,49 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  
     gtag('config', 'G-FYG046M26P');
   </script>
 
   <!-- Font-awesome Styles -->
   <link rel="stylesheet" href="../css/all.min.css" />
 
+
   <!-- Stylesheet -->
   <link rel="stylesheet" type="text/css" href="../css/style.css">
   <link rel="stylesheet" type="text/css" href="../css/navigation.css" />
   <link rel="stylesheet" href="../css/welcome.css">
 
-  <!-- Above The Fold -->
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- geolocation -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  
   <style>
-    /*  Insert Above The Fold CSS  */
-  </style>
+    body {
+      background-color: black;
+    }
+    .card-img {
+        filter: grayscale(100%);
+        transition: all 0.4s ease;
+    }
+
+    .card:hover .card-img {
+        filter: grayscale(0%);
+        transform: scale(1.05);
+    }
+
+    .card-title, .card-text {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .card {
+        overflow: hidden;
+        border: none;
+    }
+    
+</style>
 </head>
 
 <body itemscope itemtype="http://schema.org/ProfessionalService" class="index-page keywords noscroll" id="body">
@@ -69,7 +93,7 @@
   <div class="brand-home">
     <a href="index.html" id="go-home" title="The Up Studio, Long Island City, NY 11101" itemprop="url">
       <img
-        src="img/theupstudio/the_UP_studio_New_York_Architecture_and_Design_Studio_Branding_Identity_Logo.png"
+        src="../assets/logo.svg"
         alt="The Up Studio, Long Island City, NY 11101" itemprop="logo" width="265px" height="265px"
         id="upBrand-home"></a>
   </div>
@@ -81,7 +105,7 @@
     <i class="fas fa-times nav-btn" id="nav--close"></i>
     <i class="fas fa-arrow-up nav-btn" id="nav--top"></i>
   </button>
-
+<!--welcome-->
   <div class="welcome">
     <video autoplay loop muted playsinline class="video">
       <source
@@ -91,7 +115,7 @@
     </video>
     <header class="header">
       <img
-        src="the-up-studio-architecture-interior-places-designed-for-people.png"
+        src="../assets/places-designed-for-people.png"
         alt="places designed for people" class="tagline">
     </header>
     <i class="fas fa-chevron-down arrowdown"></i>
@@ -100,262 +124,153 @@
   <div class="content">
     <div class="wrapper studio-page">
 
-
-      <!-- The Up Studio Portfolio -->
-
-      <div class="row">
-
-        <div class="phil columns-4x3 sm-columns-12x10 teamimage7 right">
-          <a href="studio.html" id="aboutUP" onmouseover="yellowtext()">
-            <div class="box">
-              <h1>Get to know us & our</h1>
-              <p><span itemprop="name">Architecture,<br>Interior, and<br>Brand Design</span></p>
-            </div>
-            <div></div>
-          </a>
-        </div>
-        <div class="phil columns-8x7 sm-columns-12x10 harborhideaway-pp28">
-          <a href="harborhideaway.html">
-            <div class="box">
-              <p>Harbor Hideaway</p>
-              <h1>Award-Winning East End Escape</h1>
-            </div>
-            <div class="icon-lg icon harborhideaway-icon"></div>
-          </a>
-        </div>
-        <div class="phil columns-4x4 sm-columns-12x8 insideoutcabana-16 right" style="background-position: 37% 100%;">
-          <a href="insideoutcabana.html">
-            <div class="box">
-              <p>Inside Out Cabana</p>
-              <h1>Hamptons Outdoor Living Area</h1>
-            </div>
-            <div class="icon-lg icon insideoutcabana-icon"></div>
-          </a>
-        </div>
+<div class="container mt-5">
+  <div class="row mb-4">
+      <div class="col-lg-7 col-md-12 mb-4">
+          <div class="card bg-dark text-white">
+              <img src="../assets/picme.jpg" class="card-img" alt="Barbell House">
+              <div class="card-img-overlay d-flex flex-column justify-content-center">
+                  <h5 class="card-title">Barbell House</h5>
+                  <p class="card-text">New York Home with Scandinavian Charm</p>
+              </div>
+          </div>
       </div>
-
-
-      <div class="row">
-      
-        <div class="phil columns-7x5 sm-columns-12x10 barbellhouse-28"
-          style="background-size: 112%; background-position: 20% 70%;">
-          <a href="barbellhouse.html">
-            <div class="box">
-              <p>Barbell House</p>
-              <h1>New York Home with Scandinavian Charm</h1>
+      <div class="col-lg-5 col-md-12 mb-4">
+          <div class="card bg-dark text-white mb-2 h-50">
+              <img src="../assets/6.jpg" class="card-img" alt="Sight Sea">
+              <div class="card-img-overlay d-flex flex-column justify-content-center">
+                  <h5 class="card-title">Sight Sea</h5>
+                  <p class="card-text">Amagansett Oceanfront Renovation</p>
+              </div>
+          </div>
+          <div class="card bg-dark text-white mt-2 h-50">
+            <img src="../assets/7.webp" class="card-img" alt="Sight Sea">
+            <div class="card-img-overlay d-flex flex-column justify-content-center">
+                <h5 class="card-title">Sight Sea</h5>
+                <p class="card-text">Amagansett Oceanfront Renovation</p>
             </div>
-            <div class="icon-md icon barbellhouse-icon">
-            </div>
-          </a>
-        </div>
-      
-        <div class="phil columns-5x5 sm-columns-12x10 sightsea-40 right">
-          <a href="sightsea.html">
-            <div class="box">
-              <p>Sight Sea</p>
-              <h1>Amagansett Oceanfront Renovation</h1>
-            </div>
-            <div class="icon-md icon sightsea-icon"></div>
-          </a>
-        </div>
-      
+          </div>
       </div>
-
-
-      <div class="row">
-
-        <div class="phil columns-6x4 sm-columns-12x8 flyingbend-06md"
-          style="background-size: 130%; background-position: 48% 50%;">
-          <a href="flyingbend.html">
-            <div class="box">
-              <p>Flying Bend</p>
-              <h1>Hillside Home Along the Hudson</h1>
-            </div>
-            <div class="icon-md icon flyingbend-icon"></div>
-          </a>
-        </div>
-
-        <div class="phil columns-6x8 sm-columns-12x12 infinityhouse-60 right" style="background-position: 0% 75%;">
-          <a href="infinityhouse.html">
-            <div class="box">
-              <p>Infinity House</p>
-              <h1>Tropical, Modern Retreat</h1>
-            </div>
-            <div class="icon-lg icon infinityhouse-icon"></div>
-          </a>
-        </div>
-        
-        <div class="phil columns-6x4 sm-columns-12x8 twingables-20"
-          style="background-size: 122%; background-position: 90% 70%;">
-          <a href="twingables.html">
-            <div class="box">
-              <p>Twin Gables</p>
-              <h1>Water Mill Modern Farmhouse</h1>
-            </div>
-            <div class="icon-md icon twingables-icon"></div>
-          </a>
-        </div>
-
-      </div>
-
-
-
-      <div class="row">
-        
-        
-        <div class="phil columns-5x4 sm-columns-12x10 theupstudio-07">
-          <a href="costcalculator.html">
-            <div class="box">
-              <p>Cost<br>Calculator</p>
-              <h1>How Much Will Your<br>New, Modern Home Cost?</h1>
-            </div>
-          </a>
-        </div>
-
-        <div class="phil columns-7x5 sm-columns-12x10 opencorner-25 right" style="background-position: 45% 0%;">
-          <a href="opencorner.html">
-            <div class="box">
-              <p>Open Corner</p>
-              <h1>Bright, Modern Farmhouse</h1>
-            </div>
-            <div class="icon-md icon opencorner-icon"></div>
-          </a>
-        </div>
-        
-        <div class="phil columns-5x4 sm-columns-12x8 cliffcovehouse-04">
-          <a href="cliffcovehouse.html">
-            <div class="box">
-              <p>Cliff & Cove</p>
-              <h1>Modern Renovation to a Victorian Home</h1>
-            </div>
-            <div class="icon-md icon cliffcovehouse-icon"></div>
-          </a>
-        </div>
-        
-        <div class="phil columns-7x3 sm-columns-12x8 concealedcottage-01md right" style="background-position: 25% 50%;">
-          <a href="concealedcottage.html">
-            <div class="box">
-              <p>Concealed Cottage</p>
-              <h1>Invisible Guesthouse for Art Collectors</h1>
-            </div>
-            <div class="icon-lg icon concealedcottage-icon"></div>
-          </a>
-        </div>
-
-      </div>
-
-
-
-      <div class="row">
-
-        <div class="phil columns-6x6 sm-columns-12x8 personalspace-01" style="background-size: 200%;">
-          <a href="personalspace/index.html">
-            <div class="box">
-              <p>Personal<br>Space</p>
-              <h1>A Personality Test to Discover<br>Your Dream Home Wish List</h1>
-            </div>
-          </a>
-        </div>
-
-        <div class="phil columns-6x3 sm-columns-12x8 freefloat-05md right">
-          <a href="freefloat.html">
-            <div class="box">
-              <p>Free Float</p>
-              <h1>Modern Pool Cabana</h1>
-            </div>
-            <div class="icon-md icon freefloat-icon"></div>
-          </a>
-        </div>
-        
-        <div class="phil columns-6x3 sm-columns-12x8 calmmeadows-10 right" style="background-position: 57% 80%;">
-          <a href="calmmeadows.html">
-            <div class="box">
-              <p>Calm Meadows</p>
-              <h1>Tranquil Agricultural Oasis</h1>
-            </div>
-            <div class="icon-md icon calmmeadows-icon"></div>
-          </a>
-        </div>
-        
-      </div>
-
-
-      <div class="row">
-
-        <div class="phil columns-7x5 sm-columns-12x10 twistedridge-02sm"
-          style="background-size: 120%; background-position: 0% 50%">
-          <a href="twistedridge.html">
-            <div class="box">
-              <p>Twisted Ridge</p>
-              <h1>Hudson Valley Modern Mountain Retreat</h1>
-            </div>
-            <div class="icon-md icon twistedridge-icon"></div>
-          </a>
-        </div>
-        
-        <div class="phil columns-5x3 sm-columns-12x8 five59w23-07 right">
-          <a href="559w23.html">
-            <div class="box">
-              <p>559w23</p>
-              <h1>Modern, Residential Development<br>Brand Design</h1>
-            </div>
-            <div class="icon-md icon five59w23-icon"></div>
-          </a>
-        </div>
-        
-        <div class="phil columns-5x5 sm-columns-12x8 stitchhouse-01 right">
-          <a href="stitchhouse.html">
-            <div class="box">
-              <p>Stitch House</p>
-              <h1>Three Interconnected Family Homes</h1>
-            </div>
-            <div class="icon-md icon stitchhouse-icon"></div>
-          </a>
-        </div>
-        
-        <div class="phil columns-7x3 sm-columns-12x4 theupstudio-02">
-          <a href="architectureprocess/index.html">
-            <div class="box">
-              <p>Modern Home Design Process</p>
-              <h1>A Video Series about Our<br>Architecture & Interior Phases</h1>
-            </div>
-            <div></div>
-          </a>
-        </div>
-
-      </div>
-
-      
-      
-      <div class="row">
-      
-        <div class="phil columns-4x4 sm-columns-12x8 westbeech-19">
-          <a href="westbeech.html">
-            <div class="box">
-              <p>West Beech</p>
-              <h1>Sustainable Beach House</h1>
-            </div>
-            <div class="icon-lg icon westbeech-icon"></div>
-          </a>
-        </div>
-        
-        <div class="phil columns-8x4 sm-columns-12x10 victorylap-05 right">
-          <a href="victorylap.html">
-            <div class="box">
-              <p>Victory Lap</p>
-              <h1>Tranquil Home for Wellness</h1>
-            </div>
-            <div class="icon-sm icon victorylap-icon"></div>
-          </a>
-        </div>
-        
-      </div>
-      
-
-    </div>
   </div>
 
+  <div class="row mb-4">
+      <div class="col-lg-6 col-md-12 mb-4">
+          <div class="card bg-dark text-white">
+              <img src="../assets/5.jpg" class="card-img" alt="Flying Bend">
+              <div class="card-img-overlay d-flex flex-column justify-content-center">
+                  <h5 class="card-title">Flying Bend</h5>
+                  <p class="card-text">Hillside Home Along the Hudson</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-6 col-md-12 mb-4">
+          <div class="card bg-dark text-white">
+              <img src="../assets/4.jpg" class="card-img" alt="Infinity House">
+              <div class="card-img-overlay d-flex flex-column justify-content-center">
+                  <h5 class="card-title">Infinity House</h5>
+                  <p class="card-text">Tropical, Modern Retreat</p>
+              </div>
+          </div>
+      </div>
+  </div>
 
+  <div class="row mb-4">
+      <div class="col-lg-4 col-md-12 mb-4 ">
+          <div class="card bg-dark text-white h-100">
+              <img src="../assets/3.jpg" class="card-img" alt="Twin Gables">
+              <div class="card-img-overlay d-flex flex-column justify-content-center">
+                  <h5 class="card-title">Twin Gables</h5>
+                  <p class="card-text">Water Mill Modern Farmhouse</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-8 col-md-12 mb-4">
+          <div class="card bg-dark text-white">
+              <img src="../assets/2.webp" class="card-img" alt="Concealed Cottage">
+              <div class="card-img-overlay d-flex flex-column justify-content-center">
+                  <h5 class="card-title">Concealed Cottage</h5>
+                  <p class="card-text">Invisible Guesthouse for Art Collectors</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="row mb-4">
+      <div class="col-lg-8 col-md-12 mb-4">
+          <div class="card bg-dark text-white">
+              <img src="../assets/0.webp" class="card-img" alt="West Beech">
+              <div class="card-img-overlay d-flex flex-column justify-content-center">
+                  <h5 class="card-title">West Beech</h5>
+                  <p class="card-text">Sustainable Beach House</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card bg-dark text-white mb-4">
+              <img src="../assets/1.webp" class="card-img" alt="Victory Lap">
+              <div class="card-img-overlay d-flex flex-column justify-content-center">
+                  <h5 class="card-title">Victory Lap</h5>
+                  <p class="card-text">Tranquil Home for Wellness</p>
+              </div>
+          </div>
+          <div class="card bg-dark text-white">
+            <img src="../assets/0.webp" class="card-img" alt="Victory Lap">
+            <div class="card-img-overlay d-flex flex-column justify-content-center">
+                <h5 class="card-title">Victory Lap</h5>
+                <p class="card-text">Tranquil Home for Wellness</p>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--horaire et geolocation-->
+<div class="row">
+  <!--horaire-->
+  <div class="col-md-6 bg-black text-white p-3">
+    <h2>Horaire</h2>
+    <table class="table table-bordered h-100 text-white">
+      <thead>
+        <tr>
+          <th>Jour</th>
+          <th>Heures</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lundi</td>
+          <td>09:00–17:00</td>
+        </tr>
+        <tr>
+          <td>Mardi</td>
+          <td>09:00–17:00</td>
+        </tr>
+        <tr>
+          <td>Mercredi</td>
+          <td>09:00–17:00</td>
+        </tr>
+        <tr>
+          <td>Jeudi</td>
+          <td>09:00–17:00</td>
+        </tr>
+        <tr>
+          <td>Vendredi</td>
+          <td>09:00–17:00</td>
+        </tr>
+        <tr>
+          <td>Samedi</td>
+          <td>09:00–12:00</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+    <!--geolocation-->
+    <div class="col-12 col-md-6">
+      <h2>Location</h2>
+      <div id="map" style="height: 500px; width: 100%;"></div>
+    </div>
+  </div>
+</div>
   <!-- Page Overlay For Nav -->
   <div id="nav__overlay"></div>
 
@@ -366,19 +281,10 @@
       <li><a href="interior.html">interior.</a></li>
       <li><a href="branddesign.html">brand design.</a></li>
       <li><a href="studio-2.html">studio.</a></li>
-      <li><a href="resources.html">resources.</a></li>
       <li><a href="contact/index.html">contact.</a></li>
-      <li><a href="contact/newproject.html">start a project.</a></li>
     </ul>
     <div>
       <div class="nav__footer">
-        <div class="legal__links">
-          <p class="legal__links__paragraph">
-            <a href="privacypolicy.html">Privacy Policy</a>
-            <span class="legal__links__paragraph__delimiter"> | </span>
-            <a href="termsofuse.html">Terms of Use</a>
-          </p>
-        </div>
         <ul class="social__links">
       <li>
         <a href="https://www.instagram.com/theupstudio/" target="_blank" aria-label="Link to Instagram page">
@@ -425,8 +331,20 @@
       // videoElement.play();
     }, false);
   </script>
+  <!--slides animation-->
+  <!-- jQuery and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <!-- geolocation -->
+  <script>
+    var map = L.map('map').setView([33.86738628373662, -5.552988428996818], 13); // Replace latitude and longitude with your client's location
+  
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    L.marker([33.86738628373662, -5.552988428996818]).addTo(map)
+      .bindPopup('Client Location')
+      .openPopup();
+  </script>
 </body>
-
-
-<!-- Mirrored from www.theupstudio.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 Aug 2024 04:26:21 GMT -->
 </html>
