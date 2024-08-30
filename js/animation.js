@@ -1,24 +1,29 @@
-// scripts.js
-document.addEventListener('scroll', function() {
-    const container = document.querySelector('.scroll-container');
-    const slideWidth = container.querySelector('.slide').offsetWidth;
-    const totalSlides = document.querySelectorAll('.slide').length;
+// Get all elements with the class 'item-left'
+const items = document.querySelectorAll('.item-left');
 
-    // Calculate the total width of all slides combined
-    const totalWidth = totalSlides * slideWidth;
+// Function to pause all items
+function pauseAllItems() {
+    items.forEach(item => {
+        item.style.animationPlayState = 'paused';
+    });
+}
 
-    // Calculate the current scroll position
-    const scrollPosition = window.scrollY;
+// Function to resume all items
+function resumeAllItems() {
+    items.forEach(item => {
+        item.style.animationPlayState = 'running';
+    });
+}
 
-    // Calculate the translateX value based on scroll position
-    let translateX = scrollPosition % totalWidth;
+// Loop through each item and add event listeners
+items.forEach(item => {
+    // Pause all animations on mouseover of any item
+    item.addEventListener('mouseover', () => {
+        pauseAllItems();
+    });
 
-    // Apply the translation to the container
-    container.style.transform = `translateX(-${translateX}px)`;
-
-    // Handle circular scroll by resetting position if it goes beyond the total width
-    if (translateX >= totalWidth - window.innerWidth) {
-        container.style.transform = `translateX(0)`;
-        window.scrollTo(0, 0); // Optional: Reset scroll position
-    }
+    // Resume all animations on mouseout of any item
+    item.addEventListener('mouseout', () => {
+        resumeAllItems();
+    });
 });
