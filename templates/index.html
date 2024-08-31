@@ -139,6 +139,32 @@
       height: 24px; /* Set height of icons */
     }
 
+   .card-img-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* Center horizontally */
+        text-align: center; /* Center text */
+        padding: 20px; /* Add some padding */
+    }
+
+    .card-title {
+        font-size: 2.5rem; /* Make the font bigger */
+        font-family: 'Roboto', sans-serif; /* Use a beautiful font */
+        margin-bottom: 10px; /* Space between title and text */
+    }
+
+    .card-text {
+        font-size: 1.25rem; /* Make the font bigger */
+        font-family: 'Roboto', sans-serif; /* Use a beautiful font */
+        margin-bottom: 0; /* Remove margin at the bottom */
+        color: white;
+        text-shadow: #444;
+    }
+
+    /* Optionally, include a link to Google Fonts if you are using 'Roboto' */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 </style>
 </head>
 
@@ -180,11 +206,11 @@
   <div class="row mb-4">
       <div class="col-lg-7 col-md-12 mb-4">
           <div class="card bg-dark text-white">
-              <img src="../assets/picme.jpg" class="card-img" alt="Barbell House">
-              <div class="card-img-overlay d-flex flex-column justify-content-center">
-                  <h5 class="card-title">Barbell House</h5>
-                  <p class="card-text">New York Home with Scandinavian Charm</p>
-              </div>
+            <img src="../assets/picme.jpg" class="card-img" alt="Barbell House">
+            <div class="card-img-overlay d-flex flex-column justify-content-center">
+                <h5 class="card-title">Barbell House</h5>
+                <p class="card-text">New York Home with Scandinavian Charm</p>
+            </div>
           </div>
       </div>
       <div class="col-lg-5 col-md-12 mb-4">
