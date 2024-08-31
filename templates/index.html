@@ -93,6 +93,37 @@
         color: white;
         border-color: #444;
     }
+
+    .nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+    .nav__footer {
+      margin-top: auto; /* Push footer to the bottom if needed */
+      display: flex;
+      justify-content: center; /* Center content horizontally */
+      padding: 20px 0; /* Add some vertical padding */
+    }
+
+    .social__links {
+      list-style: none; /* Remove default bullet points */
+      display: flex;
+      gap: 15px; /* Space between the icons */
+      margin: 0; /* Reset margin */
+      padding: 0; /* Reset padding */
+    }
+
+    .social__links li {
+      display: inline-block; /* Ensure icons stay in a row */
+    }
+
+    .social__links img {
+      width: 24px; /* Set width of icons */
+      height: 24px; /* Set height of icons */
+    }
+
 </style>
 </head>
 
@@ -316,18 +347,18 @@
         <ul class="social__links">
       <li>
         <a href="https://www.instagram.com/theupstudio/" target="_blank" aria-label="Link to Instagram page">
-          <img src="img/theupstudio/instagram-icon.png" alt="Instagram">
+          <img src="../assets/instagram-icon.png" alt="Instagram">
         </a>
       </li>
       <li>
         <a href="https://www.facebook.com/theupstudio/" target="_blank" aria-label="Link to Facebook page">
-          <img src="img/theupstudio/facebook-icon.png" alt="Facebook">
+          <img src="../assets/facebook-icon.png" alt="Facebook">
         </a>
       </li>
       <li>
         <a href="https://www.youtube.com/channel/UCgOmL61ajxu55wQMSnUofGg" target="_blank"
           aria-label="Link to YouTube channel">
-          <img src="img/theupstudio/youtube-icon.png" alt="YouTube">
+          <img src="../assets/linkedin-icon.png" alt="YouTube">
         </a>
       </li>
     </ul>
