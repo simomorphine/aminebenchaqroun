@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Standard Meta Data -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Découvrez les projets réalisés par Amine Bencheqroun Architectes & Associés. Un portfolio d'excellence à Casablanca et au Maroc.">
+  <meta name="keywords"
+    content="Projets architecturaux, architecture Casablanca, réalisations, portfolio, Amine Bencheqroun">
+  <meta name="author" content="Amine Bencheqroun / Architecture et Design Moderne">
+
+  <title>Nos Projets | Amine Bencheqroun - Architecte Moderne à Casablanca</title>
+
+  <!-- Open Graph Data -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nos Projets | Amine Bencheqroun - Architecte Moderne à Casablanca">
+  <meta property="og:description"
+    content="Découvrez les projets réalisés par Amine Bencheqroun Architectes & Associés. Un portfolio d'excellence à Casablanca et au Maroc.">
+  <meta property="og:url" content="https://aminebencheqroun.com/projects">
+  <meta property="og:image" content="img/projects-page-image.jpg"> <!-- Update with an appropriate image -->
+
+  <!-- Font-awesome Styles -->
+  <link rel="stylesheet" href="../css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/navigation.css">
+  <link rel="stylesheet" href="../css/projects.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .projects-header {
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+
+    .projects-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem 0;
+    }
+
+    .project-item {
+      width: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-item:hover {
+      transform: scale(1.05);
+    }
+
+    .project-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 1rem;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .project-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-description {
+      font-size: 1rem;
+      color: #777;
+    }
+    .nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center items horizontally */
+    }
+
+    .nav__footer {
+      margin-top: auto; /* Push footer to the bottom if needed */
+      display: flex;
+      justify-content: center; /* Center content horizontally */
+      padding: 20px 0; /* Add some vertical padding */
+    }
+
+    .social__links {
+      list-style: none; /* Remove default bullet points */
+      display: flex;
+      gap: 15px; /* Space between the icons */
+      margin: 0; /* Reset margin */
+      padding: 0; /* Reset padding */
+    }
+
+    .social__links li {
+      display: inline-block; /* Ensure icons stay in a row */
+    }
+
+    .social__links img {
+      width: 24px; /* Set width of icons */
+      height: 24px; /* Set height of icons */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Button -->
+  <button type="button" id="nav-toggle" aria-label="Navigation Button">
+    <i class="fas fa-bars nav-btn" id="nav--open"></i>
+    <i class="fas fa-times nav-btn" id="nav--close"></i>
+    <i class="fas fa-arrow-up nav-btn" id="nav--top"></i>
+  </button>
+
+  <div class="container mt-5">
+    <h1 class="projects-header">Nos Projets</h1>
+
+    <div class="projects-gallery">
+      <div class="project-item">
+        <img src="img/project1.jpg" alt="Projet 1" class="project-img"> <!-- Update with actual project images -->
+        <div class="project-content">
+          <h2 class="project-title">Villa Contemporaine</h2>
+          <p class="project-description">Une villa moderne à Casablanca, alliant élégance et fonctionnalité.</p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <img src="img/project2.jpg" alt="Projet 2" class="project-img">
+        <div class="project-content">
+          <h2 class="project-title">Immeuble Résidentiel</h2>
+          <p class="project-description">Un immeuble résidentiel offrant confort et design unique.</p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <img src="img/project3.jpg" alt="Projet 3" class="project-img">
+        <div class="project-content">
+          <h2 class="project-title">Siège Social Bancaire</h2>
+          <p class="project-description">Conception d'un siège social alliant modernité et efficacité.</p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <img src="img/project4.jpg" alt="Projet 4" class="project-img">
+        <div class="project-content">
+          <h2 class="project-title">Espace Commercial</h2>
+          <p class="project-description">Aménagement d'un espace commercial moderne et accueillant.</p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <img src="img/project5.jpg" alt="Projet 5" class="project-img">
+        <div class="project-content">
+          <h2 class="project-title">École Moderne</h2>
+          <p class="project-description">Un projet d'école innovante pour un enseignement de qualité.</p>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <img src="img/project6.jpg" alt="Projet 6" class="project-img">
+        <div class="project-content">
+          <h2 class="project-title">Centre Tertiaire</h2>
+          <p class="project-description">Aménagement d'espaces tertiaires fonctionnels et esthétiques.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="nav__overlay"></div>
+
+  <!-- Navigation -->
+  <nav id="nav" class="nav">
+    <ul class="nav__links">
+      <li><a href="../index.html">Accueil.</a></li>
+      <li><a href="../templates/services.html">Services.</a></li>
+      <li><a href="../templates/projects.html">Projets.</a></li>
+      <li><a href="../templates/contact.html">Contactez-nous.</a></li>
+    </ul>
+    <div>
+      <div class="nav__footer">
+        <ul class="social__links">
+      <li>
+        <a href="https://www.instagram.com/abencheqroun.architecte/" target="_blank" aria-label="Link to Instagram page">
+          <img src="../assets/instagram-icon.png" alt="Instagram">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/profile.php?id=61565210423568" target="_blank" aria-label="Link to Facebook page">
+          <img src="../assets/facebook-icon.png" alt="Facebook">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/amine-bencheqroun-b3aa90135/" target="_blank"
+          aria-label="Link to Linkedin page">
+          <img src="../assets/linkedin-icon.png" alt="Linkedin">
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/+212662039492" target="_blank"
+          aria-label="Link to whatsapp">
+          <img src="../assets/whatsapp1.png" alt="whatsapp">
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <link rel="icon" type="image/ico" href="favicon.ico">
+  <script src="../js/navigation.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/welcome.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Standard Meta Data -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Contact Amine Bencheqroun, an architect based in Casablanca, for modern and sustainable architectural projects.">
+  <meta name="keywords"
+    content="Amine Bencheqroun, contact architect Casablanca, architecture services, design consultation">
+  <meta name="author" content="Amine Bencheqroun / Modern Architecture and Design">
+
+  <title>Contact | Amine Bencheqroun - Modern Architect in Casablanca</title>
+
+  <!-- Open Graph Data -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Contact | Amine Bencheqroun - Modern Architect in Casablanca">
+  <meta property="og:description"
+    content="Contact Amine Bencheqroun, an architect based in Casablanca, for modern and sustainable architectural projects.">
+  <meta property="og:url" content="https://aminebencheqroun.com/contact">
+  <meta property="og:image" content="img/contact-page-image.jpg"> <!-- Update with an appropriate image -->
+
+  <!-- Font-awesome Styles -->
+  <link rel="stylesheet" href="../css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/navigation.css" />
+  <link rel="stylesheet" href="../css/contact.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Leaflet CSS (for map) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <style>
+    body {
+      background-color: black;
+      font-family: 'Roboto', sans-serif;
+    }
+    .contact-header {
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: white;
+    }
+    .form-control, .btn {
+      border-radius: 0;
+    }
+    .btn {
+      background-color: #333;
+      color: white;
+    }
+    .btn:hover {
+      background-color: #555;
+    }
+    .map-container {
+      height: 400px;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    .contact-info {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    .contact-info h5 {
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .contact-info p {
+      margin: 0.5rem 0;
+    }
+    .nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center items horizontally */
+    }
+
+    .nav__footer {
+      margin-top: auto; /* Push footer to the bottom if needed */
+      display: flex;
+      justify-content: center; /* Center content horizontally */
+      padding: 20px 0; /* Add some vertical padding */
+    }
+
+    .social__links {
+      list-style: none; /* Remove default bullet points */
+      display: flex;
+      gap: 15px; /* Space between the icons */
+      margin: 0; /* Reset margin */
+      padding: 0; /* Reset padding */
+    }
+
+    .social__links li {
+      display: inline-block; /* Ensure icons stay in a row */
+    }
+
+    .social__links img {
+      width: 24px; /* Set width of icons */
+      height: 24px; /* Set height of icons */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Button -->
+  <button type="button" id="nav-toggle" aria-label="Navigation Button">
+    <i class="fas fa-bars nav-btn" id="nav--open"></i>
+    <i class="fas fa-times nav-btn" id="nav--close"></i>
+    <i class="fas fa-arrow-up nav-btn" id="nav--top"></i>
+  </button>
+
+  <div class="container mt-5">
+    <h1 class="contact-header">Contact Amine Bencheqroun</h1>
+
+    <!-- Contact Form -->
+    <div class="row">
+      <div class="col-lg-6 mb-4">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Your email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark w-100">Send</button>
+        </form>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="col-lg-6 mb-4">
+        <div class="contact-info">
+          <h5 style="color:aliceblue">Direct Contact</h5>
+          <p>Email: abencheqroun.architecte@gmail.com</p>
+          <p>Phone: +212 662-039-492</p>
+          <p>Address: 71 Résidence Andaloussia, Boulevard Anoual • Casablanca 20000 • Morocco</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="map-container" id="map"></div>
+  </div>
+    <!-- Page Overlay For Nav -->
+    <div id="nav__overlay"></div>
+<!-- Navigation -->
+<nav id="nav" class="nav">
+    <ul class="nav__links">
+      <li><a href="../index.html">Home.</a></li>
+      <li><a href="../templates/services.html">Services.</a></li>
+      <li><a href="../templates/projects.html">Projects.</a></li>
+      <li><a href="../templates/contact.html">Contact Us.</a></li>
+    </ul>
+    <div>
+      <div class="nav__footer">
+        <ul class="social__links">
+      <li>
+        <a href="https://www.instagram.com/abencheqroun.architecte/" target="_blank" aria-label="Link to Instagram page">
+          <img src="../assets/instagram-icon.png" alt="Instagram">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/profile.php?id=61565210423568" target="_blank" aria-label="Link to Facebook page">
+          <img src="../assets/facebook-icon.png" alt="Facebook">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/amine-bencheqroun-b3aa90135/" target="_blank"
+          aria-label="Link to Linkedin page">
+          <img src="../assets/linkedin-icon.png" alt="Linkedin">
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/+212662039492" target="_blank"
+          aria-label="Link to WhatsApp">
+          <img src="../assets/whatsapp1.png" alt="WhatsApp">
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <link rel="icon" type="image/ico" href="favicon.ico">
+  <script src="../js/navigation.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/welcome.js"></script>
+  <!-- Leaflet Map Initialization -->
+  <script>
+    var map = L.map('map').setView([33.5731, -7.5898], 13); // Casablanca coordinates
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([33.5731, -7.5898]).addTo(map)
+      .bindPopup('Amine Bencheqroun Architect')
+      .openPopup();
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
