@@ -1,6 +1,0 @@
-.picme {
-    background-image: url('../assets/picme.jpg');  /* Path to your image */
-    background-size: cover;  /* Make the image cover the entire div */
-    background-position: center;  /* Center the image */
-    background-repeat: no-repeat;  /* Prevent the image from repeating */
-  }
