@@ -161,7 +161,20 @@
 
     /* Optionally, include a link to Google Fonts if you are using 'Roboto' */
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    .language-switcher {
+      display: flex; /* Align language icons horizontally */
+      margin-left: 30%;
+      
+    }
 
+    .language-switcher a {
+      margin: 0 10px; /* Space between language icons */
+    }
+
+    .language-switcher img {
+      width: 100px; /* Adjust the size as needed */
+      height: auto;
+    }
 </style>
 </head>
 
@@ -400,6 +413,14 @@
         </a>
       </li>
     </ul>
+    <div class="language-switcher">
+      <a href="?lang=en">
+        <img src="../fr/assets/english-flag.png" alt="English">
+      </a>
+      <a href="?lang=fr">
+        <img src="../fr/assets/french-flag.png" alt="French">
+      </a>
+    </div>
   </nav>
   <link rel="icon" type="image/ico" href="favicon.ico">
   <script src="../js/navigation.js"></script>

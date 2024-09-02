@@ -122,6 +122,20 @@
       width: 24px; /* Set width of icons */
       height: 24px; /* Set height of icons */
     }
+    .language-switcher {
+      display: flex; /* Align language icons horizontally */
+      margin-left: 30%;
+      
+    }
+
+    .language-switcher a {
+      margin: 0 10px; /* Space between language icons */
+    }
+
+    .language-switcher img {
+      width: 100px; /* Adjust the size as needed */
+      height: auto;
+    }
   </style>
 </head>
 
@@ -223,6 +237,14 @@
           <img src="../assets/whatsapp1.png" alt="whatsapp">
         </a>
       </li>
+      <div class="language-switcher">
+        <a href="?lang=en">
+          <img src="../fr/assets/english-flag.png" alt="English">
+        </a>
+        <a href="?lang=fr">
+          <img src="../fr/assets/french-flag.png" alt="French">
+        </a>
+      </div>
     </ul>
   </nav>
   <link rel="icon" type="image/ico" href="favicon.ico">
