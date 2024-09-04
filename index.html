@@ -202,9 +202,16 @@
   </button>
 <!--welcome-->
   <div class="welcome">
+    <video autoplay loop muted playsinline class="video">
+      <source
+        src="assets/video.mp4"
+        type="video/mp4" id="video__source" />
+      Your browser does not support video.
+    </video>
     <header class="header">
       <img
-        src="assets/places-designed-for-people.png"
+        style="width: 500px; height: auto;"
+        src="assets/logo-image-removebg-preview.png"
         alt="places designed for people" class="tagline">
     </header>
     <i class="fas fa-chevron-down arrowdown"></i>
@@ -441,8 +448,8 @@
     const videoElement = document.querySelector('.video')
     const videoSource = document.getElementById('video__source')
 
-    const srcMobile = 'img/theupstudio/the-up-studio-architecture-interior-brand-design-portfolio-mobile.mp4';
-    const srcDesktop = 'img/theupstudio/the-up-studio-architecture-interior-brand-design-portfolio.mp4';
+    const srcMobile = 'assets/video.mp4';
+    const srcDesktop = 'assets/video.mp4';
 
     window.addEventListener("DOMContentLoaded", (event) => {
       (isMobile()) ? videoSource.src = srcMobile : videoSource.src = srcDesktop;
