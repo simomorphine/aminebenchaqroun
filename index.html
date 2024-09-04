@@ -69,6 +69,32 @@
     body {
       background-color: black;
     }
+    body {
+            font-family: "Museo Sans", sans-serif;
+            color: white;
+            background-color: #333; /* Dark background for contrast */
+            margin: 0;
+            padding: 0;
+    }
+    h1 span {
+            font-family: "Museo Sans", sans-serif;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        strong {
+            font-weight: bold;
+            color: #fff; /* Ensure strong text stands out */
+        }
+        .display-3-fs {
+            display: block;
+            font-size: 1.5rem;
+        }
     .custom-header {
     font-size: 4rem; /* Adjust size as needed */
     font-family: 'Roboto', sans-serif; /* Use a web-safe font or import a custom font */
@@ -146,17 +172,19 @@
     }
 
     .card-title {
-        font-size: 2.5rem; /* Make the font bigger */
-        font-family: 'Roboto', sans-serif; /* Use a beautiful font */
+        font-size: 3rem; /* Make the font bigger */
+        font-weight: bolder;
+        font-family: 'museo-sans', sans-serif; /* Use a beautiful font */
         margin-bottom: 10px; /* Space between title and text */
     }
 
     .card-text {
         font-size: 1.25rem; /* Make the font bigger */
-        font-family: 'Roboto', sans-serif; /* Use a beautiful font */
+        font-family: 'museo-sans', sans-serif; /* Use a beautiful font */
+        font-weight: bolder;
         margin-bottom: 0; /* Remove margin at the bottom */
         color: white;
-        text-shadow: #444;
+        text-shadow: #818044;
     }
 
     /* Optionally, include a link to Google Fonts if you are using 'Roboto' */
@@ -175,6 +203,19 @@
     .language-switcher img {
       width: 100px; /* Adjust the size as needed */
       height: auto;
+    }
+
+    .card:hover .card-img-overlay {
+            opacity: 0; /* Hide text on hover */
+        }
+    .background-image {
+      background-image: url('assets/Partenaires.jpg'); /* Replace with your image URL */
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh; /* Full height */
+      display: flex;
+      margin: 5px;
     }
 </style>
 </head>
@@ -226,47 +267,41 @@
           <div class="card bg-dark text-white">
             <img src="assets/picme.jpg" class="card-img" alt="Barbell House">
             <div class="card-img-overlay d-flex flex-column justify-content-center">
-                <h5 class="card-title">Barbell House</h5>
-                <p class="card-text">New York Home with Scandinavian Charm</p>
+                <h5 class="card-title hide-on-hover">Découvrez Nos Services</h5>
+                <p class="card-text hide-on-hover">Amine Bencheqroun Architects & Associates</p>
             </div>
           </div>
       </div>
       <div class="col-lg-5 col-md-12 mb-4">
-        <div class="card bg-dark text-white mb-3 h-50">
-          <img src="assets/5.jpg" class="card-img w-100 h-100 object-fit-cover" alt="Sight Sea">
-          <div class="card-img-overlay d-flex flex-column justify-content-center">
-              <h5 class="card-title">Sight Sea</h5>
-              <p class="card-text">Amagansett Oceanfront Renovation</p>
-          </div>
-        </div>
-      
-        <div class="card bg-dark text-white mb-3 h-50">
-          <img src="assets/6.jpg" class="card-img w-100 h-100 object-fit-cover" alt="Sight Sea">
-          <div class="card-img-overlay d-flex flex-column justify-content-center">
-              <h5 class="card-title">Sight Sea</h5>
-              <p class="card-text">Amagansett Oceanfront Renovation</p>
-          </div>
-        </div>
-      
+        <h1>
+          <span>Une Tradition d'excellence</span>
+          <br/>
+      </h1>
+      <p><strong>Amine Bencheqroun Architectes &amp; Associés</strong>, votre expert en <strong>architecture à Casablanca</strong> et au <strong>Maroc</strong>, s’appuie sur l’héritage d’excellence de l’agence de renom&nbsp;<strong>Bencheqroun &amp; Benjelloun</strong>, créée&nbsp;en 1985, tout en perpétuant cette tradition.</p>
+      <p>Notre agence se distingue par sa capacité à fusionner <strong>innovation</strong>, <strong>fonctionnalité</strong> et <strong>esthétique</strong> dans tous types de projets, qu'il s'agisse de <strong>villas</strong>, <strong>immeubles</strong>, <strong>bureaux</strong>, <strong>écoles</strong>, <strong>banques</strong>, ou des espaces <strong>tertiaires</strong>, <strong>commerciaux</strong>, et <strong>industriels</strong>.</p>
+      <p>Notre passion pour la créativité et notre <strong>expertise</strong> en <strong>architecture</strong> et <strong>design</strong> <strong>d'intérieur</strong> nous permettent de concevoir des espaces <strong>uniques</strong> et <strong>inspirants</strong>, parfaitement adaptés aux besoins de nos clients et partenaires.</p>
+      <p>Chaque projet est une opportunité pour nous de transformer vos visions en réalité, en alliant <strong>performance</strong>, <strong>design</strong> et <strong>durabilité</strong>. Nous ne sommes pas seulement des <strong>architectes</strong>, mais des <strong>conteurs</strong> d'histoires, des <strong>artisans</strong> de l'espace, des <strong>créateurs</strong> de visions.</p>
+      <p>Contactez notre équipe d'<strong>architectes</strong> à <strong>Casablanca</strong> et rejoignez-nous dans notre quête pour façonner un monde meilleur, un espace à la fois. <strong>Fiers</strong> de notre passé, <strong>confiants</strong> dans notre présent et résolument tournés vers l'<strong>avenir</strong>.</p>
+  </div>
       </div>
   </div>
 
   <div class="row mb-4">
       <div class="col-lg-6 col-md-12 mb-4">
           <div class="card bg-dark text-white">
-              <img src="assets/5.jpg" class="card-img" alt="Flying Bend">
+              <img src="assets/4.jpg" class="card-img" alt="Flying Bend">
               <div class="card-img-overlay d-flex flex-column justify-content-center">
-                  <h5 class="card-title">Flying Bend</h5>
-                  <p class="card-text">Hillside Home Along the Hudson</p>
+                  <h5 class="card-title">Grand Théâtre de Fès</h5>
+                  <p class="card-text">Design moderne élégant avec des lignes épurées et de vastes façades en verre</p>
               </div>
           </div>
       </div>
       <div class="col-lg-6 col-md-12 mb-4">
           <div class="card bg-dark text-white">
-              <img src="assets/4.jpg" class="card-img" alt="Infinity House">
+              <img src="assets/4 Projet 2 Centre Culturel Sidi Othmane.jpg" class="card-img" alt="Infinity House">
               <div class="card-img-overlay d-flex flex-column justify-content-center">
-                  <h5 class="card-title">Infinity House</h5>
-                  <p class="card-text">Tropical, Modern Retreat</p>
+                  <h5 class="card-title">Centre Culturel Sidi Othmane</h5>
+                  <p class="card-text">un espace pour la culture et les arts</p>
               </div>
           </div>
       </div>
@@ -275,10 +310,10 @@
   <div class="row mb-4">
       <div class="col-lg-4 col-md-12 mb-4 ">
           <div class="card bg-dark text-white h-100">
-            <img src="assets/3.jpg" class="card-img w-100 h-100 object-fit-cover" alt="Twin Gables">
+            <img src="assets/5.jpg" class="card-img w-100 h-100 object-fit-cover" alt="Twin Gables">
             <div class="card-img-overlay d-flex flex-column justify-content-center">
-                <h5 class="card-title">Twin Gables</h5>
-                <p class="card-text">Water Mill Modern Farmhouse</p>
+                <h5 class="card-title">Direction Régionale des Impôts</h5>
+                <p class="card-text">Lignes épurées, design fonctionnel et élégant</p>
             </div>
           </div>
       </div>
@@ -286,8 +321,8 @@
           <div class="card bg-dark text-white">
               <img src="assets/2.webp" class="card-img" alt="Concealed Cottage">
               <div class="card-img-overlay d-flex flex-column justify-content-center">
-                  <h5 class="card-title">Concealed Cottage</h5>
-                  <p class="card-text">Invisible Guesthouse for Art Collectors</p>
+                  <h5 class="card-title">Cité des métiers et des Compétences</h5>
+                  <p class="card-text">Architecture innovante, espace dynamique et ouvert</p>
               </div>
           </div>
       </div>
@@ -309,33 +344,7 @@
     </div>
   </div>
   </div>
-  <div class="row mb-2">
-      <div class="col-lg-8 col-md-12 mb-4">
-          <div class="card bg-dark text-white">
-              <img src="assets/0.webp" class="card-img" alt="West Beech">
-              <div class="card-img-overlay d-flex flex-column justify-content-center">
-                  <h5 class="card-title">West Beech</h5>
-                  <p class="card-text">Sustainable Beach House</p>
-              </div>
-          </div>
-      </div>
-      <div class="col-lg-4 col-md-12 mb-2">
-          <div class="card bg-dark text-white mb-4">
-              <img src="assets/1.webp" class="card-img" alt="Victory Lap">
-              <div class="card-img-overlay d-flex flex-column justify-content-center">
-                  <h5 class="card-title">Victory Lap</h5>
-                  <p class="card-text">Tranquil Home for Wellness</p>
-              </div>
-          </div>
-          <div class="card bg-dark text-white">
-            <img src="assets/0.webp" class="card-img" alt="Victory Lap">
-            <div class="card-img-overlay d-flex flex-column justify-content-center">
-                <h5 class="card-title">Victory Lap</h5>
-                <p class="card-text">Tranquil Home for Wellness</p>
-            </div>
-          </div>
-      </div>
-  </div>
+
 </div>
 <!--horaire et geolocation-->
 <div class="row">
@@ -382,6 +391,12 @@
   <div class="col-12 col-md-6 mt-3">
     <h1 class="custom-header" style="font-size: xx-large;">Location</h1>
     <div id="map" style="height: 500px; width: 100%;"></div>
+  </div>
+</div>
+<div class="row mb-2">
+  <h1 class="custom-header" style="font-size: xx-large;">Nos Partenaires</h1>
+  <div class="background-image d-flex align-items-center justify-content-center object-fit-cover">
+    </div>
   </div>
 </div>
   <!-- Page Overlay For Nav -->
