@@ -58,23 +58,23 @@
   }
   .slider-section-left .item4-left {
     animation-delay: calc(30s / 8 * (8 - 4) * -1);
-    background-image: url('../assets/slide4.webp');
+    background-image: url('../assets/11.jpg');
   }
   .slider-section-left .item5-left {
     animation-delay: calc(30s / 8 * (8 - 5) * -1);
-    background-image: url('../assets/slide5.jpg');
+    background-image: url('../assets/project5.jpg');
   }
   .slider-section-left .item6-left {
     animation-delay: calc(30s / 8 * (8 - 6) * -1);
-    background-image: url('../assets/slide6.jpg');
+    background-image: url('../assets/project4.jpg');
   }
   .slider-section-left .item7-left {
     animation-delay: calc(30s / 8 * (8 - 7) * -1);
-    background-image: url('../assets/slide7.webp');
+    background-image: url('../assets/2\ Projet\ 2\ Complexe\ Culturel\ Sidi\ Othmane.jpg');
   }
   .slider-section-left .item8-left {
     animation-delay: calc(30s / 8 * (8 - 8) * -1);
-    background-image: url('../assets/slide8.webp');
+    background-image: url('../assets/6\ Projet\ 2\ Complexe\ Culturel\ Sidi\ Othmane.jpg');
   }
   
   
