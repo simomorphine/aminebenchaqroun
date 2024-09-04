@@ -4,7 +4,7 @@
 <head>
   <!-- Standard Meta Data -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="Découvrez les services d'architecture de Amine Bencheqroun Architectes & Associés à Casablanca. Fusion de tradition et innovation dans chaque projet.">
   <meta name="keywords"
@@ -22,11 +22,11 @@
   <meta property="og:image" content="img/services-page-image.jpg"> <!-- Update with an appropriate image -->
 
   <!-- Font-awesome Styles -->
-  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/all.min.css">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/navigation.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navigation.css">
   <link rel="stylesheet" href="css/services.css">
 
   <!-- Bootstrap -->
@@ -45,8 +45,7 @@
       font-size: 3rem;
       font-weight: bold;
       text-align: center;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
+      margin: 2rem 0;
       color: white;
     }
 
@@ -74,54 +73,129 @@
 
     .services-list li {
       font-size: 1.1rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.7rem;
       list-style-type: disc;
       margin-left: 1.5rem;
       color: #e09f9f;
+      line-height: 1.2;
     }
+
     .nav {
       display: flex;
       flex-direction: column;
-      align-items: center; /* Center items horizontally */
+      align-items: center;
     }
 
     .nav__footer {
-      margin-top: auto; /* Push footer to the bottom if needed */
+      margin-top: auto;
       display: flex;
-      justify-content: center; /* Center content horizontally */
-      padding: 20px 0; /* Add some vertical padding */
+      justify-content: center;
+      padding: 20px 0;
     }
 
     .social__links {
-      list-style: none; /* Remove default bullet points */
+      list-style: none;
       display: flex;
-      gap: 15px; /* Space between the icons */
-      margin: 0; /* Reset margin */
-      padding: 0; /* Reset padding */
+      gap: 15px;
+      margin: 0;
+      padding: 0;
     }
 
     .social__links li {
-      display: inline-block; /* Ensure icons stay in a row */
+      display: inline-block;
     }
 
     .social__links img {
-      width: 24px; /* Set width of icons */
-      height: 24px; /* Set height of icons */
+      width: 24px;
+      height: 24px;
     }
+
     .language-switcher {
-      display: flex; /* Align language icons horizontally */
+      display: flex;
       margin-left: 30%;
-      
     }
 
     .language-switcher a {
-      margin: 0 10px; /* Space between language icons */
+      margin: 0 10px;
     }
 
     .language-switcher img {
-      width: 100px; /* Adjust the size as needed */
+      width: 100px;
       height: auto;
     }
+
+    
+/* ===== Demo Styles ===== */
+    .infobox{
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 14px;
+        color: #323232;
+        width: 650px;
+        height: auto;
+        padding: 20px;
+        background-color: #000000;
+        border: 1px solid #f5f5f5;
+        border-radius: 15px;
+        -webkit-box-shadow:  0px 0px 10px 0px #f5f5f5;
+        box-shadow:  0px 0px 10px 0px #f5f5f5;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 100%;
+        }
+
+    .services-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        }
+
+    .infobox {
+        flex: 1 1 300px;
+        padding: 20px;
+        border-radius: 8px;
+        }
+
+    .services-section.infobox h2 {
+        font-size: 2em;
+        margin-bottom: 1em;
+        }
+
+    .services-section.infobox p {
+        font-size: 1.2em;
+        line-height: 1.6;
+        }
+
+    @media (max-width: 768px) {
+        .services-section.infobox h2 {
+            font-size: 1.8em;
+        }
+
+        .infobox {
+            flex: 1 1 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .services-section.infobox h2 {
+            font-size: 1.5em;
+        }
+
+        .services-section.infobox p {
+            font-size: 1em;
+        }
+
+        .infobox {
+            padding: 15px;
+        }
+    }
+
   </style>
 </head>
 
@@ -138,20 +212,25 @@
     <h1 class="services-header">Nos Services</h1>
 
     <div class="services-section">
-      <h2>Une Tradition d'excellence</h2>
-      <p>Amine Bencheqroun Architectes & Associés, votre expert en architecture à Casablanca et au Maroc, s’appuie sur
-        l’héritage d’excellence de l’agence de renom Bencheqroun & Benjelloun, créée en 1985, tout en perpétuant cette
-        tradition.</p>
+      <div class="infobox"> 
+        <h2>Une Tradition d'excellence</h2>
+        <p>Amine Bencheqroun Architectes & Associés, votre expert en architecture à Casablanca et au Maroc, s’appuie sur
+            l’héritage d’excellence de l’agence de renom Bencheqroun & Benjelloun, créée en 1985, tout en perpétuant cette
+            tradition.</p>
+      </div> 
     </div>
 
     <div class="services-section">
-      <h2>Notre Expertise</h2>
-      <p>Notre agence se distingue par sa capacité à fusionner innovation, fonctionnalité et esthétique dans tous type de
-        projets, qu'il s'agisse de villas, immeubles, bureaux, écoles, banques, ou des espaces tertiaires, commerciaux,
-        et industriels.</p>
+        <div class="infobox">
+            <h2>Notre Expertise</h2>
+            <p>Notre agence se distingue par sa capacité à fusionner innovation, fonctionnalité et esthétique dans tous type de
+                projets, qu'il s'agisse de villas, immeubles, bureaux, écoles, banques, ou des espaces tertiaires, commerciaux,
+                et industriels.</p>
+        </div>
     </div>
 
     <div class="services-section">
+      <div class="infobox">
       <h2>Nos Services</h2>
       <p>Notre passion pour la créativité et notre expertise en architecture et design d'intérieur nous permettent de
         concevoir des espaces uniques et inspirants, parfaitement adaptés aux besoins de nos clients et partenaires.</p>
@@ -163,20 +242,25 @@
         <li>Projets d'écoles et banques</li>
         <li>Création d'espaces industriels fonctionnels</li>
       </ul>
+      </div>
     </div>
 
     <div class="services-section">
+      <div class="infobox">
       <h2>Notre Philosophie</h2>
       <p>Chaque projet est une opportunité pour nous de transformer vos visions en réalité, en alliant performance,
         design et durabilité. Nous ne sommes pas seulement des architectes, mais des conteurs d'histoires, des artisans
         de l'espace, des créateurs de visions.</p>
+      </div>  
     </div>
 
     <div class="services-section">
+      <div class="infobox">  
       <h2>Contactez-Nous</h2>
       <p>Contactez notre équipe d'architectes à Casablanca et rejoignez-nous dans notre quête pour façonner un monde
         meilleur, un espace à la fois. Fiers de notre passé, confiants dans notre présent et résolument tournés vers
-        l'avenir.</p>
+        l'avenir. <a href="contact.html">Contactez-nous</a></p>
+      </div>
     </div>
   </div>
   <div id="nav__overlay"></div>
@@ -184,51 +268,53 @@
   <!-- Navigation -->
   <nav id="nav" class="nav">
     <ul class="nav__links">
-        <li><a href="index.html">Accueil.</a></li>
-        <li><a href="services.html">Services.</a></li>
-        <li><a href="projects.html">Projets.</a></li>
-        <li><a href="contact.html">Contactez-nous.</a></li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="contact.html">Contactez-nous</a></li>
     </ul>
     <div>
       <div class="nav__footer">
         <ul class="social__links">
-      <li>
-        <a href="https://www.instagram.com/abencheqroun.architecte/" target="_blank" aria-label="Link to Instagram page">
-          <img src="assets/instagram-icon.png" alt="Instagram">
-        </a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com/profile.php?id=61565210423568" target="_blank" aria-label="Link to Facebook page">
-          <img src="assets/facebook-icon.png" alt="Facebook">
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/amine-bencheqroun-b3aa90135/" target="_blank"
-          aria-label="Link to Linkedin page">
-          <img src="assets/linkedin-icon.png" alt="Linkedin">
-        </a>
-      </li>
-      <li>
-        <a href="https://wa.me/+212662039492" target="_blank"
-          aria-label="Link to whatsapp">
-          <img src="assets/whatsapp1.png" alt="whatsapp">
-        </a>
-      </li>
-    </ul>
-    <div class="language-switcher">
-      <a href="en/templates/services.html">
-        <img src="assets/english-flag.png" alt="English">
-      </a>
-      <a href="#">
-        <img src="assets/french-flag.png" alt="French">
-      </a>
+          <li>
+            <a href="https://www.instagram.com/abencheqroun.architecte/" target="_blank" aria-label="Link to Instagram page">
+              <img src="assets/instagram-icon.png" alt="Instagram">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61565210423568" target="_blank" aria-label="Link to Facebook page">
+              <img src="assets/facebook-icon.png" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/amine-bencheqroun-b3aa90135/" target="_blank" aria-label="Link to Linkedin page">
+              <img src="assets/linkedin-icon.png" alt="Linkedin">
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/+212662039492" target="_blank" aria-label="Link to Whatsapp">
+              <img src="assets/whatsapp1.png" alt="Whatsapp">
+            </a>
+          </li>
+        </ul>
+        <div class="language-switcher">
+          <a href="en/templates/services.html">
+            <img src="assets/english-flag.png" alt="English">
+          </a>
+          <a href="#">
+            <img src="assets/french-flag.png" alt="French">
+          </a>
+        </div>
+      </div>
     </div>
   </nav>
+
   <link rel="icon" type="image/ico" href="favicon.ico">
+
+  <!-- Scripts -->
   <script src="js/navigation.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/welcome.js"></script>
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
