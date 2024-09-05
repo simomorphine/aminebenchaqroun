@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Standard Meta Data -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Découvrez les services d'architecture de Amine Bencheqroun Architectes & Associés à Casablanca. Fusion de tradition et innovation dans chaque projet.">
+  <meta name="keywords"
+    content="Amine Bencheqroun, architecte Casablanca, architecture Maroc, design intérieur, projet immobilier, services architecturaux">
+  <meta name="author" content="Amine Bencheqroun / Architecture et Design Moderne">
+
+  <title>Services | Amine Bencheqroun - Architecte Moderne à Casablanca</title>
+
+  <!-- Open Graph Data -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Services | Amine Bencheqroun - Architecte Moderne à Casablanca">
+  <meta property="og:description"
+    content="Découvrez les services d'architecture de Amine Bencheqroun Architectes & Associés à Casablanca. Fusion de tradition et innovation dans chaque projet.">
+  <meta property="og:url" content="https://aminebencheqroun.com/services">
+  <meta property="og:image" content="img/services-page-image.jpg"> <!-- Update with an appropriate image -->
+
+  <!-- Font-awesome Styles -->
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/services.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: black;
+      font-family: 'Museo-sans', sans-serif;
+    }
+    h1 span {
+            font-family: "Museo Sans", sans-serif;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        strong {
+            font-weight: bold;
+            color: #fff; /* Ensure strong text stands out */
+        }
+
+    .services-header {
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      margin: 2rem 0;
+      color: white;
+    }
+
+    .services-section {
+      margin: 2rem 0;
+    }
+
+    .services-section h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .services-section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ceb4b4;
+      margin-bottom: 1rem;
+    }
+
+    .services-list {
+      margin: 2rem 0;
+    }
+
+    .services-list li {
+      font-size: 1.1rem;
+      margin-bottom: 0.7rem;
+      list-style-type: disc;
+      margin-left: 1.5rem;
+      color: #e09f9f;
+      line-height: 1.2;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav__footer {
+      margin-top: auto;
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+    }
+
+    .social__links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .social__links li {
+      display: inline-block;
+    }
+
+    .social__links img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .language-switcher {
+      display: flex;
+      margin-left: 30%;
+    }
+
+    .language-switcher a {
+      margin: 0 10px;
+    }
+
+    .language-switcher img {
+      width: 100px;
+      height: auto;
+    }
+
+    
+/* ===== Demo Styles ===== */
+    .infobox{
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 14px;
+        color: #323232;
+        width: 650px;
+        height: auto;
+        padding: 20px;
+        background-color: #000000;
+        border: 1px solid #f5f5f5;
+        border-radius: 15px;
+        -webkit-box-shadow:  0px 0px 10px 0px #f5f5f5;
+        box-shadow:  0px 0px 10px 0px #f5f5f5;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 100%;
+        }
+
+    .services-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        }
+
+    .infobox {
+        flex: 1 1 300px;
+        padding: 20px;
+        border-radius: 8px;
+        }
+
+    .services-section.infobox h2 {
+        font-size: 2em;
+        margin-bottom: 1em;
+        }
+
+    .services-section.infobox p {
+        font-size: 1.2em;
+        line-height: 1.6;
+        }
+
+    @media (max-width: 768px) {
+        .services-section.infobox h2 {
+            font-size: 1.8em;
+        }
+
+        .infobox {
+            flex: 1 1 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .services-section.infobox h2 {
+            font-size: 1.5em;
+        }
+
+        .services-section.infobox p {
+            font-size: 1em;
+        }
+
+        .infobox {
+            padding: 15px;
+        }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Button -->
+  <button type="button" id="nav-toggle" aria-label="Navigation Button">
+    <i class="fas fa-bars nav-btn" id="nav--open"></i>
+    <i class="fas fa-times nav-btn" id="nav--close"></i>
+    <i class="fas fa-arrow-up nav-btn" id="nav--top"></i>
+  </button>
+
+  <div class="container mt-5">
+    <h1 class="services-header">Direction des Impôts de Berrechid</h1>
+
+    <div class="services-section">
+      <div class="infobox"> 
+        <p><strong>Lieu:</strong> Berrechid, Maroc</p><p><strong>Surface:</strong> 9600m²</p><p><strong>Année:</strong> 2024</p><p>Située le long de l'avenue Mohamed V, la&nbsp;<strong>Direction Provinciale des Impôts de Berrechid</strong>&nbsp;a été stratégiquement implantée pour offrir une <strong>visibilité optimale</strong> et se distinguer dans un <strong>environnement urbain animé</strong>. Positionnée du côté Est du terrain, cette implantation <strong>maximise l’impact visuel</strong> et crée un<strong> repère urbain</strong> <strong>identifiable</strong> entre l'agence de la Bank of Afrika et le bâtiment de la sûreté nationale.</p><p>La <strong>volumétrie</strong> du bâtiment répond aux <strong>exigences fonctionnelles</strong> tout en respectant les <strong>réglementations locales </strong>et le <strong>contexte environnant</strong>. Le projet se compose de <strong>plusieurs volume</strong>s distincts : <strong>le socle</strong>, aligné avec le niveau de la rue, assure une transition fluide avec l'espace public ;<strong> le corps principal</strong>, légèrement en retrait par rapport au <strong>socle</strong>, marque l'accès principal tout en conférant une unité architecturale ; et<strong> une structure émergente</strong> sur les niveaux supérieurs ajoute une verticalité dynamique.<strong> La façade</strong> est enveloppée d’une<strong> seconde peau</strong>, intégrant des éléments de<strong> protection solaire</strong> pour optimiser la <strong>performance énergétique</strong> et offrir un environnement intérieur confortable.</p><p>À l'angle formé par la rue de 12 mètres et le boulevard Mohamed V, un <strong>cylindre en verre</strong> orné du logo de la <strong>Direction Provinciale des Impôts</strong> constitue un <strong>élément emblématique</strong> qui renforce l'identité visuelle du bâtiment. Cette caractéristique<strong> iconographique</strong> guide les visiteurs et accentue la présence institutionnelle dans le <strong>paysage urbain</strong>.</p><p>La conception inclut <strong>trois accès</strong> distincts : l'<strong>accès principal</strong> sur le boulevard, offrant une e<strong>ntrée publique</strong> accessible et un hall d'accueil spacieux ; l'<strong>accès personnel</strong> sur la voie de 12 mètres, facilitant la mobilité des employés et l'<strong>accès au parking</strong> souterrain ; et l'<strong>accès de service</strong> à l'arrière, dédié aux opérations de <strong>maintenance et d’urgence</strong>. Ces <strong>accès stratégiquement positionnés</strong> garantissent une <strong>circulation fluide </strong>et une intégration harmonieuse dans l'environnement urbain.</p><p>Les niveaux du bâtiment sont organisés pour répondre aux besoins spécifiques de ses occupants : le <strong>rez-de-chaussée</strong> abrite le <strong>hall d'accueil</strong> et le<strong> front office</strong> ; les <strong>étages supérieurs</strong> sont dédiés aux <strong>bureaux</strong> et aux différentes<strong> subdivisions</strong> de la Direction ; le<strong> sous-sol</strong>, quant à lui, est aménagé pour le <strong>stationnement</strong> et les<strong> archives</strong>. Cette <strong>organisation fonctionnelle</strong>, couplée à une <strong>approche durable et moderne</strong>, crée un espace de travail<strong> inspirant et efficace</strong>, tout en respectant les principes de <strong>développement durable</strong>.</p><p>
+
+</p>
+      </div> 
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="assets/" class="card-img-top" alt="Card Image 1">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="assets/2 Projet 1 Grand Théâtre de Fès.jpg" class="card-img-top" alt="Card Image 2">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="assets/3 Projet 1 Grand Théâtre de Fès.jpg" class="card-img-top" alt="Card Image 3">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="assets/4 Projet 1 Grand Théâtre de Fès.jpg" class="card-img-top" alt="Card Image 1">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="assets/5 Projet 1 Grand Théâtre de Fès.jpg" class="card-img-top" alt="Card Image 2">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="assets/6 Projet 1 Grand Théâtre de Fès.jpg" class="card-img-top" alt="Card Image 3">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="services-section">
+      <div class="infobox">  
+      <h2>Contactez-Nous</h2>
+      <p>Contactez notre équipe d<strong>'architectes</strong> à <strong>Casablanca</strong> et <strong>rejoignez-nous</strong> dans notre quête pour façonner un <strong>monde</strong>
+        meilleur, un espace à la fois. Fiers de notre passé, <strong>confiants</strong> dans notre présent et résolument tournés vers
+        l'<strong>avenir</strong>. <a href="contact.html">Contactez-nous</a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="nav__overlay"></div>
+
+  <!-- Navigation -->
+  <nav id="nav" class="nav">
+    <ul class="nav__links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="partenaires.html">Partenaires</a></li>
+        <li><a href="contact.html">Contactez-nous</a></li>
+    </ul>
+    <div>
+      <div class="nav__footer">
+        <ul class="social__links">
+          <li>
+            <a href="https://www.instagram.com/abencheqroun.architecte/" target="_blank" aria-label="Link to Instagram page">
+              <img src="assets/instagram-icon.png" alt="Instagram">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61565210423568" target="_blank" aria-label="Link to Facebook page">
+              <img src="assets/facebook-icon.png" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/amine-bencheqroun-b3aa90135/" target="_blank" aria-label="Link to Linkedin page">
+              <img src="assets/linkedin-icon.png" alt="Linkedin">
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/+212662039492" target="_blank" aria-label="Link to Whatsapp">
+              <img src="assets/whatsapp1.png" alt="Whatsapp">
+            </a>
+          </li>
+        </ul>
+        <div class="language-switcher">
+          <a href="en/templates/services.html">
+            <img src="assets/english-flag.png" alt="English">
+          </a>
+          <a href="#">
+            <img src="assets/french-flag.png" alt="French">
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <link rel="icon" type="image/ico" href="favicon.ico">
+
+  <!-- Scripts -->
+  <script src="js/navigation.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/welcome.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Standard Meta Data -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Découvrez les services d'architecture de Amine Bencheqroun Architectes & Associés à Casablanca. Fusion de tradition et innovation dans chaque projet.">
+  <meta name="keywords"
+    content="Amine Bencheqroun, architecte Casablanca, architecture Maroc, design intérieur, projet immobilier, services architecturaux">
+  <meta name="author" content="Amine Bencheqroun / Architecture et Design Moderne">
+
+  <title>Services | Amine Bencheqroun - Architecte Moderne à Casablanca</title>
+
+  <!-- Open Graph Data -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Services | Amine Bencheqroun - Architecte Moderne à Casablanca">
+  <meta property="og:description"
+    content="Découvrez les services d'architecture de Amine Bencheqroun Architectes & Associés à Casablanca. Fusion de tradition et innovation dans chaque projet.">
+  <meta property="og:url" content="https://aminebencheqroun.com/services">
+  <meta property="og:image" content="img/services-page-image.jpg"> <!-- Update with an appropriate image -->
+
+  <!-- Font-awesome Styles -->
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/services.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: black;
+      font-family: 'Museo-sans', sans-serif;
+    }
+    h1 span {
+            font-family: "Museo Sans", sans-serif;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        strong {
+            font-weight: bold;
+            color: #fff; /* Ensure strong text stands out */
+        }
+
+    .services-header {
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      margin: 2rem 0;
+      color: white;
+    }
+
+    .services-section {
+      margin: 2rem 0;
+    }
+
+    .services-section h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .services-section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ceb4b4;
+      margin-bottom: 1rem;
+    }
+
+    .services-list {
+      margin: 2rem 0;
+    }
+
+    .services-list li {
+      font-size: 1.1rem;
+      margin-bottom: 0.7rem;
+      list-style-type: disc;
+      margin-left: 1.5rem;
+      color: #e09f9f;
+      line-height: 1.2;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav__footer {
+      margin-top: auto;
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+    }
+
+    .social__links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .social__links li {
+      display: inline-block;
+    }
+
+    .social__links img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .language-switcher {
+      display: flex;
+      margin-left: 30%;
+    }
+
+    .language-switcher a {
+      margin: 0 10px;
+    }
+
+    .language-switcher img {
+      width: 100px;
+      height: auto;
+    }
+
+    
+/* ===== Demo Styles ===== */
+    .infobox{
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 14px;
+        color: #323232;
+        width: 650px;
+        height: auto;
+        padding: 20px;
+        background-color: #000000;
+        border: 1px solid #f5f5f5;
+        border-radius: 15px;
+        -webkit-box-shadow:  0px 0px 10px 0px #f5f5f5;
+        box-shadow:  0px 0px 10px 0px #f5f5f5;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 100%;
+        }
+
+    .services-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        }
+
+    .infobox {
+        flex: 1 1 300px;
+        padding: 20px;
+        border-radius: 8px;
+        }
+
+    .services-section.infobox h2 {
+        font-size: 2em;
+        margin-bottom: 1em;
+        }
+
+    .services-section.infobox p {
+        font-size: 1.2em;
+        line-height: 1.6;
+        }
+
+    @media (max-width: 768px) {
+        .services-section.infobox h2 {
+            font-size: 1.8em;
+        }
+
+        .infobox {
+            flex: 1 1 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .services-section.infobox h2 {
+            font-size: 1.5em;
+        }
+
+        .services-section.infobox p {
+            font-size: 1em;
+        }
+
+        .infobox {
+            padding: 15px;
+        }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Button -->
+  <button type="button" id="nav-toggle" aria-label="Navigation Button">
+    <i class="fas fa-bars nav-btn" id="nav--open"></i>
+    <i class="fas fa-times nav-btn" id="nav--close"></i>
+    <i class="fas fa-arrow-up nav-btn" id="nav--top"></i>
+  </button>
+
+  <div class="container mt-5">
+    <h1 class="services-header">Grand Théâtre de Fès</h1>
+
+    <div class="services-section">
+      <div class="infobox"> 
+        <p><strong>Lieu: </strong>Fès, Maroc<br/><strong>Capacité: </strong>1200 places<br/><strong>Année:</strong> 2022<br/><br/></p><p>Le projet du <strong>Grand Théâtre de Fès</strong> s'inscrit dans une <strong>approche contemporaine</strong>, visant à créer un <strong>édifice culturel emblématique</strong> tout en répondant aux <strong>exigences fonctionnelles</strong> de son environnement. Situé en périphérie de la ville, à proximité immédiate d'un centre commercial et d'une voie rapide reliant <strong>Fès</strong> à <strong>Meknès</strong>, le choix de l'emplacement du <strong>théâtre</strong> reflète une<strong> volonté d'accessibilité</strong> et de <strong>démocratisation</strong> de l'équipement culturel, généralement perçu comme <strong>élitiste</strong>.</p><p>L<strong>'implantation</strong> du <strong>théâtre</strong> sur un <strong>terrain en contrebas</strong> de la voie rapide et ses deux <strong>défis majeurs</strong>, à savoir la proximité de la voie et le dénivelé de -3,50 m, ont conduit à la<strong> conception d'un bâtiment monolithique</strong>. Ce volume principal abrite la<strong> salle de théâtre</strong> et la <strong>cage de scène</strong>, avec des hauteurs respectives de 14 m et 23 m. Autour de ce <strong>noyau central</strong>, des <strong>volumes annexes</strong> de 8,90 m de hauteur sont disposés pour accueillir les <strong>espaces fonctionnels</strong> <strong>complémentaires</strong>.</p><p>L'<strong>architecture du projet</strong> se distingue par l'utilisation de <strong>deux sémantiques distinctes</strong>. Le volume principal, abritant<strong> la salle et la scène</strong>, est enveloppé de <strong>façades ventilées</strong> en panneaux composites préfabriqués, montés sur une<strong> structure métallique galvanisée</strong>. Cette solution technique permet une <strong>ventilation</strong> <strong>naturelle</strong> tout en <strong>protégeant le bâtiment</strong> des rayons directs du soleil. En façade, une <strong>seconde peau paramétrique</strong> en Ductal recouvre les espaces annexes, créant un <strong>jeu d'ombres et de lumière</strong> grâce à une composition de 28 panneaux modulaires. Ces <strong>panneaux</strong> sont ponctués d'ouvertures hexagonales non vitrées, positionnées en correspondance avec les ouvertures vitrées des locaux, évoquant la forme d'un<strong> diaphragme</strong>.</p><p>La<strong> volumétrie</strong> du<strong> théâtre</strong> est guidée par la nature spécifique des <strong>espaces intérieurs</strong>, chacun répondant à des<strong> besoins fonctionnels</strong> précis. La <strong>salle de théâtre</strong> et la <strong>scène</strong>, espaces <strong>clos</strong> par excellence, sont entourées de <strong>zones tampons latérales</strong>, disposées sur deux niveaux. Au nord, ces zones abritent au rez-de-chaussée le <strong>salon d’honneur</strong>, l'infirmerie et les locaux techniques, tandis que l'étage est réservé à l'<strong>administration</strong>. Au sud, les <strong>locaux d'activités</strong> occupent les deux niveaux. Enfin, derrière la <strong>cage de scène</strong>, les salles de répétition et les loges des artistes forment une autre zone tampon, assurant l<strong>'isolation phonique</strong> nécessaire et la<strong> protection contre l'extérieur</strong>.</p><p>Ce projet architectural s'affirme ainsi non seulement par sa <strong>fonctionnalité</strong> et son <strong>intégration dans le tissu urbain</strong>, mais aussi par sa capacité à représenter une architecture <strong>moderne et emblématique</strong>, en phase avec les aspirations culturelles de<strong> Fès</strong>.</p><p>
+
+</p>
+      </div> 
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="assets/1 Projet 1 Grand Théâtre de Fès.jpg" class="card-img-top" alt="Card Image 1">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="assets/2 Projet 1 Grand Théâtre de Fès.jpg" class="card-img-top" alt="Card Image 2">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="assets/3 Projet 1 Grand Théâtre de Fès.jpg" class="card-img-top" alt="Card Image 3">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="assets/4 Projet 1 Grand Théâtre de Fès.jpg" class="card-img-top" alt="Card Image 1">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="assets/5 Projet 1 Grand Théâtre de Fès.jpg" class="card-img-top" alt="Card Image 2">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="assets/6 Projet 1 Grand Théâtre de Fès.jpg" class="card-img-top" alt="Card Image 3">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="services-section">
+      <div class="infobox">  
+      <h2>Contactez-Nous</h2>
+      <p>Contactez notre équipe d<strong>'architectes</strong> à <strong>Casablanca</strong> et <strong>rejoignez-nous</strong> dans notre quête pour façonner un <strong>monde</strong>
+        meilleur, un espace à la fois. Fiers de notre passé, <strong>confiants</strong> dans notre présent et résolument tournés vers
+        l'<strong>avenir</strong>. <a href="contact.html">Contactez-nous</a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="nav__overlay"></div>
+
+  <!-- Navigation -->
+  <nav id="nav" class="nav">
+    <ul class="nav__links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="partenaires.html">Partenaires</a></li>
+        <li><a href="contact.html">Contactez-nous</a></li>
+    </ul>
+    <div>
+      <div class="nav__footer">
+        <ul class="social__links">
+          <li>
+            <a href="https://www.instagram.com/abencheqroun.architecte/" target="_blank" aria-label="Link to Instagram page">
+              <img src="assets/instagram-icon.png" alt="Instagram">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61565210423568" target="_blank" aria-label="Link to Facebook page">
+              <img src="assets/facebook-icon.png" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/amine-bencheqroun-b3aa90135/" target="_blank" aria-label="Link to Linkedin page">
+              <img src="assets/linkedin-icon.png" alt="Linkedin">
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/+212662039492" target="_blank" aria-label="Link to Whatsapp">
+              <img src="assets/whatsapp1.png" alt="Whatsapp">
+            </a>
+          </li>
+        </ul>
+        <div class="language-switcher">
+          <a href="en/templates/services.html">
+            <img src="assets/english-flag.png" alt="English">
+          </a>
+          <a href="#">
+            <img src="assets/french-flag.png" alt="French">
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <link rel="icon" type="image/ico" href="favicon.ico">
+
+  <!-- Scripts -->
+  <script src="js/navigation.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/welcome.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
